@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62, 5%; }
+
+/*------estilo general------*/
+a {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; }
+
+h1,
+h2 {
+  font-size: 1.8rem; }
+
+h2 {
+  color: #f4a76f; }
+
+h3,
+h4 {
+  font-size: 1.3rem; }
+
+h5 {
+  font-size: 1.1rem;
+  color: #ec6c78; }
+
+h6 {
+  font-size: 0.9rem; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem; }
+
+/*------estilo general------*/
+/*------portada inicial------*/
+.portadaInicial, .portadaSobreMi, .portadaRecetas, .portadaTienda, .portadaContacto {
+  background-image: url(../Images/portada1.jpg);
+  background-size: cover;
+  height: 100vh;
+  opacity: 85%; }
+  .portadaInicial header .nav-bg-opacity, .portadaSobreMi header .nav-bg-opacity, .portadaRecetas header .nav-bg-opacity, .portadaTienda header .nav-bg-opacity, .portadaContacto header .nav-bg-opacity {
+    background-color: #0000;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .portadaInicial header .img-grande, .portadaSobreMi header .img-grande, .portadaRecetas header .img-grande, .portadaTienda header .img-grande, .portadaContacto header .img-grande {
+    width: 20vw; }
+  .portadaInicial header .img-chica, .portadaSobreMi header .img-chica, .portadaRecetas header .img-chica, .portadaTienda header .img-chica, .portadaContacto header .img-chica {
+    width: 12vw; }
+  .portadaInicial header .nav-link, .portadaSobreMi header .nav-link, .portadaRecetas header .nav-link, .portadaTienda header .nav-link, .portadaContacto header .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal; }
+  .portadaInicial header .navbar-light .navbar-nav .nav-link, .portadaSobreMi header .navbar-light .navbar-nav .nav-link, .portadaRecetas header .navbar-light .navbar-nav .nav-link, .portadaTienda header .navbar-light .navbar-nav .nav-link, .portadaContacto header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff; }
+  .portadaInicial header .navbar-light .navbar-nav .nav-link:hover, .portadaSobreMi header .navbar-light .navbar-nav .nav-link:hover, .portadaRecetas header .navbar-light .navbar-nav .nav-link:hover, .portadaTienda header .navbar-light .navbar-nav .nav-link:hover, .portadaContacto header .navbar-light .navbar-nav .nav-link:hover {
+    color: #f4a76f; }
+  .portadaInicial header .navbar-toggler, .portadaSobreMi header .navbar-toggler, .portadaRecetas header .navbar-toggler, .portadaTienda header .navbar-toggler, .portadaContacto header .navbar-toggler {
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.3rem; }
+  .portadaInicial div p, .portadaSobreMi div p, .portadaRecetas div p, .portadaTienda div p, .portadaContacto div p {
+    color: #ffffff;
+    font-family: "Bebas Neue", cursive;
+    text-shadow: 2px 2px 2px #4b4b4b;
+    font-size: 2.9rem;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    position: absolute; }
+    .portadaInicial div p span, .portadaSobreMi div p span, .portadaRecetas div p span, .portadaTienda div p span, .portadaContacto div p span {
+      color: #f4a76f; }
+
+/*------portada inicial------*/
+/*------redes------*/
+.redes {
+  position: fixed;
+  left: 0%;
+  z-index: 2;
+  top: 40%; }
+  .redes a {
+    color: #0000;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2em; }
+  .redes a:hover {
+    color: #f4a76f;
+    transform: scale(1.1);
+    margin-left: 10%; }
+
+/*------redes------*/
+/*------home------*/
+.home {
+  margin: 5% 1.3rem 5% 1.3rem; }
+  .home img {
+    width: 11rem;
+    padding-bottom: 13px; }
+
+/*------home------*/
+/*------pasos------*/
+.pasos {
+  background-color: #ec6c78; }
+  .pasos .card {
+    border-color: #ec6c78;
+    background-color: #ec6c78;
+    padding-top: 2.5rem; }
+    .pasos .card img {
+      width: 8vw;
+      height: 8vh;
+      margin-left: auto;
+      margin-right: auto; }
+
+/*------pasos------*/
+/*------testimonios------*/
+.testimonios {
+  margin: 5% 1.3rem 0% 1.3rem; }
+  .testimonios img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%; }
+  .testimonios p {
+    font-size: 1rem;
+    padding-right: 26%;
+    padding-left: 26%; }
+  .testimonios h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #f4a76f; }
+  .testimonios h6 {
+    letter-spacing: 0.05em; }
+  .testimonios i {
+    color: #f4a76f; }
+
+/*------testimonios------*/
+/*------footer------*/
+footer {
+  position: relative; }
+  footer .bloque {
+    width: 100%;
+    height: 18vh;
+    background-color: #9ed355;
+    position: absolute;
+    /*------newsletter------*/
+    /*------newsletter------*/
+    /*------datos------*/
+    /*------datos------*/ }
+    footer .bloque .newsletter {
+      background-color: #9ed355; }
+      footer .bloque .newsletter p {
+        font-family: "Bebas Neue", cursive;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 0.05em; }
+    footer .bloque .datos {
+      background-color: #9ed355; }
+      footer .bloque .datos .copy {
+        font-size: 0.9rem; }
+  @media (min-width: 576px) {
+    footer .bloque {
+      bottom: 0.05rem; }
+    footer .newsletter {
+      padding-bottom: 1rem; } }
+  @media (min-width: 768px) {
+    footer .bloque {
+      bottom: 1rem; }
+    footer .newsletter {
+      padding: 0 3% 1.5rem 3%; } }
+  @media (min-width: 992px) {
+    footer .bloque {
+      bottom: 2.5rem; }
+    footer .datos {
+      padding-right: 3%; } }
+  @media (min-width: 1200px) {
+    footer .bloque {
+      bottom: 2.5rem; }
+    footer .datos {
+      padding-right: 3%; } }
+
+/*------footer------*/
+/*------sobre mi------*/
+.portadaSobreMi, .portadaRecetas, .portadaTienda, .portadaContacto {
+  background-image: url(../Images/portada2.jpg);
+  height: 70vh; }
+  .portadaSobreMi div p, .portadaRecetas div p, .portadaTienda div p, .portadaContacto div p {
+    top: 35vh; }
+
+.sobreMi {
+  margin: 5% 1.3rem 0% 1.3rem; }
+  .sobreMi h1 {
+    padding-bottom: 1.5rem; }
+  .sobreMi p {
+    font-size: 1rem; }
+  @media (min-width: 576px) {
+    .sobreMi img {
+      padding: 2% 10% 5% 10%; } }
+  @media (min-width: 768px) {
+    .sobreMi img {
+      padding: 2% 10% 5% 10%; } }
+  @media (min-width: 992px) {
+    .sobreMi img {
+      padding: 0%; } }
+  @media (min-width: 1200px) {
+    .sobreMi img {
+      padding: 0%; } }
+
+/*------sobre mi------*/
+/*------Recetas------*/
+.portadaRecetas {
+  background-image: url(../Images/portada3.jpg); }
+
+.recetasInicio {
+  margin: 5% 1.3rem 0% 1.3rem; }
+  .recetasInicio h1 {
+    padding-bottom: 0.1rem; }
+  .recetasInicio p {
+    padding: 0 4rem 2% 4rem; }
+
+.receta-caja {
+  position: relative;
+  overflow: hidden; }
+  .receta-caja img {
+    border-radius: 15px;
+    margin-bottom: 30px; }
+  .receta-caja:hover img {
+    opacity: 80%; }
+  .receta-caja .receta-info {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #4d4c4c;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s linear; }
+  .receta-caja .receta-info:hover {
+    opacity: 1; }
+
+.img-modal {
+  border-radius: 15px; }
+
+/*------Recetas------*/
+/*------tienda------*/
+.portadaTienda {
+  background-image: url(../Images/portada4.jpg); }
+
+.tiendaInicio {
+  margin: 5% 1.3rem 0% 1.3rem; }
+  .tiendaInicio h1 {
+    padding-bottom: 0.1rem; }
+  .tiendaInicio p {
+    padding: 0 4rem 3% 4rem; }
+
+.producto1,
+.producto2 {
+  background-image: url(../Images/bg-trama.png);
+  box-shadow: 2px 2px 2px #4b4b4b;
+  border-radius: 15px;
+  padding: 5%; }
+  .producto1 .sombra,
+  .producto2 .sombra {
+    text-shadow: 2px 2px 2px #4d4c4c; }
+
+/*------tienda------*/
+/*------contacto------*/
+.portadaContacto {
+  background-image: url(../Images/portada5.jpg); }
+
+.contactoInicio {
+  margin: 5% 1.3rem 0% 1.3rem; }
+  .contactoInicio h1 {
+    padding-bottom: 0.1rem; }
+  .contactoInicio p {
+    padding: 0 4rem 3% 4rem; }
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+/*------contacto------*/
