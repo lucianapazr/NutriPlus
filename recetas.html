@@ -32,8 +32,8 @@
                 <nav class="navbar navbar-expand-lg navbar-light navbar-light nav-bg-opacity">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="index.html"><img src="Images/logo_grande.png" 
-                        class="img-grande d-none d-lg-block" alt="Nutriplus"/>
-                        <img src="Images/logo_chico.png" class="img-chica d-lg-none" alt="Nutriplus"/></a></a>
+                        class="portada__img-grande d-none d-lg-block" alt="Nutriplus"/>
+                        <img src="Images/logo_chico.png" class="portada__img-chica d-lg-none" alt="Nutriplus"/></a></a>
                         <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -62,60 +62,61 @@
             
     </div>
 
-    <aside class="d-flex flex-column ml-1 redes">
+    <aside class="d-flex flex-column mr-1 redes">
             <a href="https://www.instagram.com/nutri.plus.ok/"><i class="fab fa-instagram-square"></i></a>
             <a href="https://www.facebook.com/nutri.plus.ok/"><i class="fab fa-facebook-square"></i></a>
             <a href="https://api.whatsapp.com/send?phone=5491141735909&text=Hola!"><i class="fab fa-whatsapp-square"></i></a>
     </aside>
 
-    <div class="recetasInicio">
-      <h1 class="text-center animate__animated animate__fadeInUp">Recetas</h1>
-      <p class="text-center">Para que no te quedes sin ideas al momento de cocinar, vas a acceder a muchisimas recetas saludables para <strong>desayunos, almuerzos, meriendas y cenas</strong>. Te vamos a indicar no solo sus ingredientes y su procedimiento, sino también qué nutrientes aportan para que sepas como incluirlas en tu alimentacion.</p>
-    </div>
+    <main class="animate__animated animate__fadeInUp text-center recetasInicio">
+      <h1>Recetas</h1>
+      <p>Para que no te quedes sin ideas al momento de cocinar, vas a acceder a muchisimas recetas saludables para <strong>desayunos, almuerzos, meriendas y cenas</strong>. Te vamos a indicar no solo sus ingredientes y su procedimiento, sino también qué nutrientes aportan para que sepas como incluirlas en tu alimentacion.</p>
+    </main>
 
-    <section>
-      <div class="container">
+
+    <div class="container">
         <div class="row align-items-center justify-content-center">
+          
           <!------Imagenes------>
           <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#pollo">
             <img src="Images/ensalada_pollo.png" class="img-fluid" alt="Ensalada de pollo">
-            <div class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Ensalada de pollo</h4>
+            <div class="receta-caja__info">
+              <h4>Ensalada de pollo</h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#tostada">
             <img src="Images/frutas_huevo_semillas.png" class="img-fluid" alt="Frutas, huevos y semillas">
-            <div class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Frutas, huevos y semillas</h4>
+            <div class="receta-caja__info">
+              <h4>Frutas, huevos y semillas</h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#yogur">
             <img src="Images/yogur.png" class="img-fluid" alt="Yogur mix">
-            <div class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Yogur Mix</h4>
+            <div class="receta-caja__info">
+              <h4>Yogur Mix</h4>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 receta-caja"  data-bs-toggle="modal" data-bs-target="#omelette">
+          <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#omelette">
             <img src="Images/omelette.png" class="img-fluid" alt="omelette">
-            <div class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Omelette</h4>
+            <div class="receta-caja__info">
+              <h4>Omelette</h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#pastas">
             <img src="Images/pastas.png" class="img-fluid" alt="pastas">
-            <div class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Pastas</h4>
+            <div class="receta-caja__info">
+              <h4>Pastas</h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 receta-caja" data-bs-toggle="modal" data-bs-target="#helado">
             <img src="Images/helado_casero.png" class="img-fluid" alt="helado casero">
-            <div  class="receta-info">
-              <h4 class="text-center animate__animated animate__bounceIn">Helado casero</h4>
+            <div  class="receta-caja__info">
+              <h4>Helado casero</h4>
             </div>
           </div>
 
@@ -282,14 +283,14 @@
           </div>
           
         </div>
-      </div>
-    </section>
+    </div>
+
 
     <footer>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#9ed355" fill-opacity="1" d="M0,32L120,53.3C240,75,480,117,720,112C960,107,1200,53,1320,26.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
       <div class="container-fluid">
         <div class="row bloque">
-          <div class="col-lg-6 col-12 text-sm-center text-md-center text-lg-left text-xl-left newsletter">
+          <div class="col-lg-6 col-12 bloque__newsletter">
             <div>
               <p>Suscribite a nuestro newsletter</p>
             </div>
@@ -301,15 +302,15 @@
                 <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" required>
               </div>
               <div class="col-lg-4 col-12">
-                <input type="submit" name="enviar" class="btn btn-outline-success mt-sm-1 mt-md-1 mt-lg-0 mt-xl-0" value="Suscribirse">
+                <input type="submit" name="enviar" class="btn btn-outline-success mt-xs-1 mt-sm-1 mt-md-1 mt-lg-0 mt-xl-0" value="Suscribirse">
               </div>
             </div>
           </div>   
-          <div class="col-lg-6 col-12 text-sm-center text-md-center text-lg-right text-xl-right datos">
+          <div class="col-lg-6 col-12 bloque__datos">
             <p><i class="fas fa-map-marker-alt"></i> Av. Córdoba 3724, P2, CABA.</br>
               <i class="fas fa-phone-alt"></i> +54 9 11 6940 6392</br>
               <i class="far fa-envelope"></i> nutriplus.arg@gmail.com<br></p>
-            <p class="copy">© Copyright 2021 <b>NutriPlus</b> | Todos los derechos reservados</p>
+            <p class="bloque__cr">© Copyright 2021 <b>NutriPlus</b> | Todos los derechos reservados</p>
           </div>
         </div>
       </div>

@@ -69,42 +69,40 @@ p {
 /*------estilo general------*/
 
 /*------portada inicial------*/
-.portadaInicial {
+.portada {
   background-image: url(../Images/portada1.jpg);
   background-size: cover;
   height: 100vh;
   opacity: 85%;
-  header {
-    .nav-bg-opacity {
-      background-color: $negro;
-      background-color: rgba($negro, $opacidad);
-    }
-    .img-grande {
-      width: 20vw;
-    }
-    .img-chica {
-      width: 12vw;
-    }
-    .nav-link {
-      font-family: $fuente-titulo;
-      font-size: 1.1rem;
-      font-weight: normal;
-    }
-    .navbar-light .navbar-nav .nav-link {
-      color: $blanco;
-    }
-    .navbar-light .navbar-nav .nav-link:hover {
-      color: $color-primario;
-    }
-    .navbar-toggler {
-      background-color: $blanco;
-      background-color: rgba($blanco, $opacidad);
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-right: 0.3rem;
-    }
+  .nav-bg-opacity {
+    background-color: $negro;
+    background-color: rgba($negro, $opacidad);
   }
-  div p {
+  .portada__img-grande {
+    width: 20vw;
+  }
+  .portada__img-chica {
+    width: 12vw;
+  }
+  .nav-link {
+    font-family: $fuente-titulo;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: $blanco;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: $color-primario;
+  }
+  .navbar-toggler {
+    background-color: $blanco;
+    background-color: rgba($blanco, $opacidad);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.3rem;
+  }
+  p {
     color: $blanco;
     font-family: $fuente-secundaria;
     text-shadow: $sombreado;
@@ -123,9 +121,9 @@ p {
 /*------redes------*/
 .redes {
   position: fixed;
-  left: 0%;
+  right: 0%;
   z-index: 2;
-  top: 40%;
+  top: 43%;
   a {
     color: $negro;
     color: rgba($negro, $opacidad);
@@ -133,15 +131,19 @@ p {
   }
   a:hover {
     color: $color-primario;
+    margin-right: 10%;
     transform: scale(1.1);
-    margin-left: 10%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
   }
 }
 /*------redes------*/
 
 /*------home------*/
 .home {
-  margin: 5% 1.3rem 5% 1.3rem;
+  margin: 8vh 1.3rem 8vh 1.3rem;
   img {
     width: 11rem;
     padding-bottom: 13px;
@@ -168,7 +170,7 @@ p {
 
 /*------testimonios------*/
 .testimonios {
-  margin: 5% 1.3rem 0% 1.3rem;
+  margin: 8vh 1.3rem 0% 1.3rem;
   img {
     width: 100px;
     height: 100px;
@@ -203,7 +205,7 @@ footer {
     background-color: $color-terciario;
     position: absolute;
     /*------newsletter------*/
-    .newsletter {
+    .bloque__newsletter {
       background-color: $color-terciario;
       p {
         font-family: $fuente-secundaria;
@@ -215,44 +217,72 @@ footer {
     }
     /*------newsletter------*/
     /*------datos------*/
-    .datos {
+    .bloque__datos {
       background-color: $color-terciario;
-      .copy {
+      .bloque__cr {
         font-size: 0.9rem;
       }
     }
     /*------datos------*/
   }
+  @media (min-width: 360px) {
+    .bloque {
+      top: 3rem;
+    }
+    .bloque__newsletter {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+    .bloque__datos {
+      text-align: center;
+    }
+  }
   @media (min-width: 576px) {
     .bloque {
-      bottom: 0.05rem;
+      top: 4rem;
     }
-    .newsletter {
+    .bloque__newsletter {
       padding-bottom: 1rem;
+      text-align: center;
+    }
+    .bloque__datos {
+      text-align: center;
     }
   }
   @media (min-width: 768px) {
     .bloque {
-      bottom: 1rem;
+      top: 6rem;
     }
-    .newsletter {
+    .bloque__newsletter {
       padding: 0 3% 1.5rem 3%;
+      text-align: center;
+    }
+    .bloque__datos {
+      text-align: center;
     }
   }
   @media (min-width: 992px) {
     .bloque {
-      bottom: 2.5rem;
+      top: 5.5rem;
     }
-    .datos {
+    .bloque__newsletter {
+      text-align: left;
+    }
+    .bloque__datos {
       padding-right: 3%;
+      text-align: right;
     }
   }
   @media (min-width: 1200px) {
     .bloque {
-      bottom: 2.5rem;
+      top: 7.5rem;
     }
-    .datos {
+    .bloque__newsletter {
+      text-align: left;
+    }
+    .bloque__datos {
       padding-right: 3%;
+      text-align: right;
     }
   }
 }
@@ -260,40 +290,60 @@ footer {
 
 /*------sobre mi------*/
 .portadaSobreMi {
-  @extend .portadaInicial;
+  @extend .portada;
   background-image: url(../Images/portada2.jpg);
   height: 70vh;
-  div p {
+  p {
     top: 35vh;
   }
 }
 
 .sobreMi {
-  margin: 5% 1.3rem 0% 1.3rem;
+  margin: 8vh 1.3rem 0vh 1.3rem;
   h1 {
     padding-bottom: 1.5rem;
   }
   p {
     font-size: 1rem;
   }
+  @media (min-width: 360px) {
+    img {
+      padding: 2% 5% 5% 5%;
+    }
+    p {
+      text-align: center;
+    }
+  }
   @media (min-width: 576px) {
     img {
       padding: 2% 10% 5% 10%;
+    }
+    p {
+      text-align: center;
     }
   }
   @media (min-width: 768px) {
     img {
       padding: 2% 10% 5% 10%;
     }
+    p {
+      text-align: center;
+    }
   }
   @media (min-width: 992px) {
     img {
       padding: 0%;
     }
+    p {
+      text-align: left;
+    }
   }
   @media (min-width: 1200px) {
     img {
       padding: 0%;
+    }
+    p {
+      text-align: left;
     }
   }
 }
@@ -306,12 +356,12 @@ footer {
 }
 
 .recetasInicio {
-  margin: 5% 1.3rem 0% 1.3rem;
+  margin: 8vh 1.3rem 0vh 1.3rem;
   h1 {
     padding-bottom: 0.1rem;
   }
   p {
-    padding: 0 4rem 2% 4rem;
+    padding: 0vh 4rem 8vh 4rem;
   }
 }
 
@@ -325,7 +375,7 @@ footer {
   &:hover img {
     opacity: 80%;
   }
-  .receta-info {
+  .receta-caja__info {
     color: $blanco;
     text-shadow: $sombreado-oscuro;
     text-transform: uppercase;
@@ -342,9 +392,18 @@ footer {
     text-align: center;
     opacity: 0;
     transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
   }
-  .receta-info:hover {
+  .receta-caja__info:hover {
     opacity: 1;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
   }
 }
 
@@ -360,22 +419,21 @@ footer {
 }
 
 .tiendaInicio {
-  margin: 5% 1.3rem 0% 1.3rem;
+  margin: 8vh 1.3rem 0vh 1.3rem;
   h1 {
     padding-bottom: 0.1rem;
   }
   p {
-    padding: 0 4rem 3% 4rem;
+    padding: 0vh 4rem 8vh 4rem;
   }
 }
 
-.producto1,
-.producto2 {
+.producto {
   background-image: url(../Images/bg-trama.png);
   box-shadow: $sombreado;
   border-radius: 15px;
   padding: 5%;
-  .sombra {
+  .producto__sombra {
     text-shadow: $sombreado-oscuro;
   }
 }
@@ -388,18 +446,21 @@ footer {
 }
 
 .contactoInicio {
-  margin: 5% 1.3rem 0% 1.3rem;
+  margin: 8vh 1.3rem 0vh 1.3rem;
   h1 {
     padding-bottom: 0.1rem;
   }
   p {
-    padding: 0 4rem 3% 4rem;
+    padding: 0vh 4rem 8vh 4rem;
   }
 }
 
-.formulario {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.form-control {
+  resize: none;
+  &:focus {
+    border-color: $color-primario;
+    box-shadow: 0 0 0 0.25rem $color-primario;
+    resize: none;
+  }
 }
 /*------contacto------*/
