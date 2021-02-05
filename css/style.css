@@ -57,7 +57,7 @@ p {
   .portada .portada__img-grande, .portadaSobreMi .portada__img-grande, .portadaRecetas .portada__img-grande, .portadaTienda .portada__img-grande, .portadaContacto .portada__img-grande {
     width: 20vw; }
   .portada .portada__img-chica, .portadaSobreMi .portada__img-chica, .portadaRecetas .portada__img-chica, .portadaTienda .portada__img-chica, .portadaContacto .portada__img-chica {
-    width: 12vw; }
+    width: 13vw; }
   .portada .nav-link, .portadaSobreMi .nav-link, .portadaRecetas .nav-link, .portadaTienda .nav-link, .portadaContacto .nav-link {
     font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
@@ -90,7 +90,7 @@ p {
   position: fixed;
   right: 0%;
   z-index: 2;
-  top: 43%; }
+  top: 55%; }
   .redes a {
     color: #0000;
     color: rgba(0, 0, 0, 0.5);
@@ -110,7 +110,7 @@ p {
   margin: 8vh 1.3rem 8vh 1.3rem; }
   .home img {
     width: 11rem;
-    padding-bottom: 13px; }
+    padding-bottom: 20px; }
 
 /*------home------*/
 /*------pasos------*/
@@ -319,7 +319,7 @@ footer {
     padding: 0vh 4rem 8vh 4rem; }
 
 .producto {
-  background-image: url(../Images/bg-trama.png);
+  background-image: url(../Images/bg-trama.jpg);
   box-shadow: 2px 2px 2px #4b4b4b;
   border-radius: 15px;
   padding: 5%; }

@@ -82,7 +82,7 @@ p {
     width: 20vw;
   }
   .portada__img-chica {
-    width: 12vw;
+    width: 13vw;
   }
   .nav-link {
     font-family: $fuente-titulo;
@@ -123,7 +123,7 @@ p {
   position: fixed;
   right: 0%;
   z-index: 2;
-  top: 43%;
+  top: 55%;
   a {
     color: $negro;
     color: rgba($negro, $opacidad);
@@ -146,7 +146,7 @@ p {
   margin: 8vh 1.3rem 8vh 1.3rem;
   img {
     width: 11rem;
-    padding-bottom: 13px;
+    padding-bottom: 20px;
   }
 }
 /*------home------*/
@@ -429,7 +429,7 @@ footer {
 }
 
 .producto {
-  background-image: url(../Images/bg-trama.png);
+  background-image: url(../Images/bg-trama.jpg);
   box-shadow: $sombreado;
   border-radius: 15px;
   padding: 5%;
